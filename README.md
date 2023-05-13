@@ -5,6 +5,7 @@ A Text Manipulation App That Gives You A Way To Enhance Your Text Quickly And Ef
 # [Website Demo Link ](https://textwizard.netlify.app/)
 # Libraries Used
 
+- **`React`** 
 - **`React Router`** 
 - **`React-Toastify `**
 
