@@ -3,7 +3,8 @@ A Text Manipulation App That Gives You A Way To Enhance Your Text Quickly And Ef
 # Libraries Used
 
 - **`React  Router`** 
-- **`React-Toastify `** 
+- **`React-Toastify `**
+
 # Features
 * Convert to Uppercase
 * Convert to Lowercase
@@ -12,4 +13,5 @@ A Text Manipulation App That Gives You A Way To Enhance Your Text Quickly And Ef
 * Remove Extra Spaces
 * Text Summary
 * Preview
+
 **and more.....**
