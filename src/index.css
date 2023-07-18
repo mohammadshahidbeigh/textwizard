@@ -1,3 +1,44 @@
-.accordion-button::after {
-    filter: invert(1);
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.btn {
+  background-color: #3b82f6;
+  color: #fff;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.25rem;
 }
+
+body {
+  background-color: #f3f4f6;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navbar.light {
+  background-color: #fff;
+}
+
+.navbar.dark {
+  background-color: #1f2937;
+}
+
+.navbar.light a {
+  color: #3b82f6;
+}
+
+.navbar.dark a {
+  color: #fff;
+}
+

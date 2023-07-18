@@ -44,19 +44,36 @@ export default function TextForm(props) {
 
   return (
     <>
-      <div className="container"style={{color: props.mode==='dark'?'white':'#042743'}}>
+      <div
+        className="my-3"
+        style={{
+          color: props.mode === "dark" ? "white" : "#042743",
+          fontSize: "2.5rem", // Adjust the value to your desired size
+          fontWeight: "bold",
+        }}
+      >
         <h1 className="mb-2">{props.heading}</h1>
         <div className="mb-2">
-        <div className="container"style={{color: props.mode==='dark'?'white':'#042743'}}>
-        <h6 className="mb-2">{props.heading1}</h6>
-        </div>
+          <div
+            className="my-2 mx-2"
+            style={{
+              color: props.mode === "dark" ? "white" : "#042743",
+              fontSize: "1rem", // Adjust the value to your desired size
+              //fontWeight: "bold",
+            }}
+          >
+            <h8 className="mb-2">{props.heading1}</h8>
+          </div>
           <textarea
             className="form-control"
             value={text}
             onChange={handleOnChange}
-            style={{backgroundColor: props.mode==='dark'?'#13466e':'white', color: props.mode==='dark'?'white':'#042743'}}
+            style={{
+              backgroundColor: props.mode === "dark" ? "#13466e" : "white",
+              color: props.mode === "dark" ? "white" : "#042743",
+            }}
             id="myBox"
-            rows="8"
+            rows="7"
           ></textarea>
         </div>
         <button
@@ -95,23 +112,67 @@ export default function TextForm(props) {
           Remove Extra Spaces
         </button>
       </div>
-      <div className="container my-3"style={{color: props.mode==='dark'?'white':'#042743'}}>
-        <h2>Your Text Summary</h2>
-        <p>
-          {text.split(/\s+/).filter((element) => element.length !== 0).length}{" "}
-          words and {text.length} characters
-        </p>
-        <p>
-          {(
-            0.008 *
-            text.split(/\s+/).filter((element) => element.length !== 0).length
-          ).toFixed(2)}{" "}
-          Minutes read
-        </p>
-        <h2>Preview</h2>
-        <p>{text.length > 0 ? text : "Nothing to Preview!"}</p>
+      <div className="container my-4 mx-2">
+        <h2
+          className="my-2"
+          style={{
+            color: props.mode === "dark" ? "white" : "#042743",
+            fontSize: "2rem", // Adjust the value to your desired size
+            fontWeight: "bold",
+          }}
+        >
+          Your Text Summary
+        </h2>
+        <div>
+          <p
+            className="my-2"
+            style={{
+              color: props.mode === "dark" ? "white" : "#042743",
+              fontSize: "1rem", // Adjust the value to your desired size
+            }}
+          >
+            {text.split(/\s+/).filter((element) => element.length !== 0).length}{" "}
+            words and {text.length} characters
+          </p>
+          <p
+            className="my-2"
+            style={{
+              color: props.mode === "dark" ? "white" : "#042743",
+              fontSize: "1rem", // Adjust the value to your desired size
+            }}
+          >
+            {(
+              0.008 *
+              text.split(/\s+/).filter((element) => element.length !== 0).length
+            ).toFixed(2)}{" "}
+            Minutes read
+          </p>
+        </div>
+        <h2
+          className="my-2"
+          style={{
+            color: props.mode === "dark" ? "white" : "#042743",
+            fontSize: "2rem", // Adjust the value to your desired size
+            fontWeight: "bold",
+          }}
+        >
+          Preview
+        </h2>
+        <div>
+          <p
+            className="my-2"
+            style={{
+              color: props.mode === "dark" ? "white" : "#042743",
+              fontSize: "1rem", // Adjust the value to your desired size
+            }}
+          >
+            {text.length > 0 ? text : "Nothing to Preview!"}
+          </p>
+        </div>
       </div>
+
       <ToastContainer
+        className="bg-gray-800 text-white"
         position="bottom-right"
         autoClose={1500}
         hideProgressBar={false}
