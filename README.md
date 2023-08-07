@@ -1,5 +1,5 @@
 # TextWizard
-A Text Manipulation app that gives you a way to enhance your text quickly and efficiently. with features like word count, character count, and space removal, you can enhance your text quickly and efficiently. Whether you're a student, writer, or business professional, textwizard is an essential tool to help you craft your best work.
+A Text Manipulation App that gives you a way to enhance your text quickly and efficiently. with features like word count, character count, and space removal, you can enhance your text quickly and efficiently. Whether you're a student, writer, or business professional, textwizard is an essential tool to help you craft your best work.
 
 
 # [Link 🔗 ](https://textwizard.netlify.app/)
