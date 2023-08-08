@@ -3,6 +3,7 @@ A Text Manipulation App that gives you a way to enhance your text quickly and ef
 
 
 # [Link 🔗 ](https://textwizard.netlify.app/)
+
 # Libraries Used
 
 - **`React`** 
