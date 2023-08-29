@@ -20,4 +20,4 @@ A Text Manipulation App that gives you a way to enhance your text quickly and ef
 * Text Summary
 * Preview
 
-**and more.....**
+**and more  .....**
